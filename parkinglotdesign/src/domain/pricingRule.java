@@ -32,7 +32,7 @@ public class pricingRule {
         return id;
     }
 
-    public Vehicle.VehicleType getType(){
+    public Vehicle.VehicleType getVehicleType(){
         return type;
     }
 
