@@ -42,17 +42,17 @@ public class paymentRepository {
         return result;
     }
 
-    private List<payment> findAll(){
+    public List<payment> findAll(){
         return new ArrayList<>(payments.values());
     }
 
-    private void update(payment payment){
+    public void update(payment payment){
         if(payments.containsKey(payment.getId())){
             payments.put(payment.getId(), payment);
         }
     }
 
-    private void delete(UUID paymentId){
+    public void delete(UUID paymentId){
         payment payment = payments.remove(paymentId);
 
         if(payment != null){

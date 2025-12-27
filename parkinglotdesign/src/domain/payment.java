@@ -17,7 +17,7 @@ public class payment {
         PENDING, SUCCESS, FAILED
     }
 
-    public void payment(UUID ticketId, double amount, paymentGateway gateway){
+    public  payment(UUID ticketId, double amount, paymentGateway gateway){
         this.id = UUID.randomUUID();
         this.ticketId = ticketId;
         this.amount = amount;

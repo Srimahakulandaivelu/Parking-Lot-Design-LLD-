@@ -14,7 +14,7 @@ public class receipt {
         SUCCESS, FAILED, PENDING
     }
 
-    public receipt(UUID ticketId){
+    public receipt(UUID ticketId, double totalFee){
         this.id = UUID.randomUUID();
         this.ticketId = ticketId;
         this.exitTime = LocalDateTime.now();
